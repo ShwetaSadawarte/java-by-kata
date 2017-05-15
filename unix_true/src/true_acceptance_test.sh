@@ -4,11 +4,8 @@
 status=0
 javac ./production/TrueKata.java
 java -cp ./production/ TrueKata
-echo $?
 
-if [ $status -eq $? ]
+if [ $status -eq $? ];
 then
         echo "true command exit with success"
-else
-        echo "true command exit with failure"
 fi
